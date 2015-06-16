@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.crt.advproject.config.exe.debug.340099881">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.exe.debug.340099881" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="Debug build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.exe.debug.340099881" name="Debug" parent="com.crt.advproject.config.exe.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size ${BuildArtifactFileName};  arm-none-eabi-objcopy -O ihex ${BuildArtifactFileName} ${BuildArtifactFileBaseName}.hex; ">
+					<folderInfo id="com.crt.advproject.config.exe.debug.340099881." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.exe.debug.146327651" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.exe.debug.1106835812" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/new_project}/Debug" id="com.crt.advproject.builder.exe.debug.751716915" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.exe.debug"/>
+							<tool id="com.crt.advproject.cpp.exe.debug.1169418679" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug">
+								<option id="com.crt.advproject.cpp.arch.2141111857" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.thumb.285181061" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.313673705" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="NANO51822"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.1033585142" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="com.crt.advproject.cpp.hdrlib.409581593" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1972362958" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/inc}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.1778575132" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.1809018907" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.1738880557" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-Os" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.932967858" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.exe.debug.555986276" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
+								<option id="com.crt.advproject.gcc.hdrlib.213413075" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.arch.673931471" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.thumb.284509738" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1426608756" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="NANO51822"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.101664036" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.1084759295" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gcc.exe.debug.option.optimization.level.1746100286" name="Optimization Level" superClass="com.crt.advproject.gcc.exe.debug.option.optimization.level" value="gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.exe.debug.option.debugging.level.2028103233" name="Debug Level" superClass="com.crt.advproject.gcc.exe.debug.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.optimization.flags.1144748583" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-Os" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.input.2017505512" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.exe.debug.293060604" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
+								<option id="com.crt.advproject.gas.hdrlib.2070549962" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.arch.57331763" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.thumb.251426076" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.flags.crt.271498532" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
+								<option id="gnu.both.asm.option.include.paths.160561577" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.129873545" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.812876733" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.link.cpp.exe.debug.258182534" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug">
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.877059811" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.arch.982851652" name="Architecture" superClass="com.crt.advproject.link.cpp.arch" value="com.crt.advproject.link.cpp.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.cpp.thumb.1798569463" name="Thumb mode" superClass="com.crt.advproject.link.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.cpp.script.1424404986" name="Linker script" superClass="com.crt.advproject.link.cpp.script" value="&quot;ucxpresso_nrf.ld&quot;" valueType="string"/>
+								<option id="com.crt.advproject.link.cpp.manage.2097049737" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nostdlibs.1526669531" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.other.1841891401" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
+									<listOptionValue builtIn="false" value="--gc-sections"/>
+								</option>
+								<option id="com.crt.advproject.link.cpp.hdrlib.830406185" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.nohost" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.cpp.crpenable.209944386" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
+								<option id="gnu.cpp.link.option.paths.127014988" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/Release}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.600994982" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="uCXpresso.NRF"/>
+								</option>
+								<option id="com.crt.advproject.link.cpp.multicore.slave.451127416" name="Multicore configuration" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
+								<option id="com.crt.advproject.link.cpp.scriptdir.1511487461" name="Script path" superClass="com.crt.advproject.link.cpp.scriptdir" value="&quot;${workspace_loc:/uCXpresso.NRF/linkscripts/}&quot;" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1590719219" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.crt.advproject.link.exe.debug.1487930443" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.crt.advproject.config.exe.debug.340099881.939816859">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.exe.debug.340099881.939816859" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="Release build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.exe.debug.340099881.939816859" name="Release" parent="com.crt.advproject.config.exe.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size ${BuildArtifactFileName};  arm-none-eabi-objcopy -O ihex ${BuildArtifactFileName} ${BuildArtifactFileBaseName}.hex; ">
+					<folderInfo id="com.crt.advproject.config.exe.debug.340099881.939816859." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.exe.debug.1419198622" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.exe.debug.2098839159" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/new_project}/Debug" id="com.crt.advproject.builder.exe.debug.1129206633" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.exe.debug"/>
+							<tool id="com.crt.advproject.cpp.exe.debug.891537529" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug">
+								<option id="com.crt.advproject.cpp.arch.997036325" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.thumb.875198963" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.2034387908" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="NANO51822"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.1765546938" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="com.crt.advproject.cpp.hdrlib.1695405878" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1853215416" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/inc}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.883134577" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.926772200" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.1772245167" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-Os" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.416120025" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.exe.debug.1243408955" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
+								<option id="com.crt.advproject.gcc.hdrlib.586771809" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.arch.1878180882" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.thumb.1525403280" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1738052215" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="NANO51822"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.46330850" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.2003797802" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gcc.exe.debug.option.optimization.level.1599318333" name="Optimization Level" superClass="com.crt.advproject.gcc.exe.debug.option.optimization.level" value="gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.exe.debug.option.debugging.level.1389470931" name="Debug Level" superClass="com.crt.advproject.gcc.exe.debug.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.optimization.flags.1450329342" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-Os" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.input.479058684" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.exe.debug.1017873730" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
+								<option id="com.crt.advproject.gas.hdrlib.1998371845" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.arch.1113062854" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.thumb.1543532318" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.flags.crt.902004733" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
+								<option id="gnu.both.asm.option.include.paths.804187926" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1234066537" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.1115822788" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.link.cpp.exe.debug.1479271200" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug">
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.93703242" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.arch.971071914" name="Architecture" superClass="com.crt.advproject.link.cpp.arch" value="com.crt.advproject.link.cpp.target.cm0" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.cpp.thumb.1492821970" name="Thumb mode" superClass="com.crt.advproject.link.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.cpp.script.594125531" name="Linker script" superClass="com.crt.advproject.link.cpp.script" value="&quot;ucxpresso_nrf.ld&quot;" valueType="string"/>
+								<option id="com.crt.advproject.link.cpp.manage.1145063701" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nostdlibs.1673748286" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.other.45104982" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
+									<listOptionValue builtIn="false" value="--gc-sections"/>
+								</option>
+								<option id="com.crt.advproject.link.cpp.hdrlib.926420245" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.nohost" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.cpp.crpenable.354343903" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
+								<option id="gnu.cpp.link.option.paths.1980432547" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.NRF/Release}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.1434538341" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="uCXpresso.NRF"/>
+								</option>
+								<option id="com.crt.advproject.link.cpp.multicore.slave.1144043984" name="Multicore configuration" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
+								<option id="com.crt.advproject.link.cpp.scriptdir.2021365665" name="Script path" superClass="com.crt.advproject.link.cpp.scriptdir" value="&quot;${workspace_loc:/uCXpresso.NRF/linkscripts/}&quot;" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1427996198" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.crt.advproject.link.exe.debug.1437993193" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="new_project.com.crt.advproject.projecttype.exe.1849676737" name="Executable" projectType="com.crt.advproject.projecttype.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="com.crt.config">
+		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;TargetConfig&gt;&#13;
+&lt;Properties property_0="" property_2="LPC11_12_13_128K_8K.cfx" property_3="NXP" property_4="LPC11U37/401" property_count="5" version="70200"/&gt;&#13;
+&lt;infoList vendor="NXP"&gt;&lt;info chip="LPC11U37/401" flash_driver="LPC11_12_13_128K_8K.cfx" match_id="0x00017C40" name="LPC11U37/401" stub="crt_emu_lpc11_13_nxp"&gt;&lt;chip&gt;&lt;name&gt;LPC11U37/401&lt;/name&gt;&#13;
+&lt;family&gt;LPC11Uxx&lt;/family&gt;&#13;
+&lt;vendor&gt;NXP (formerly Philips)&lt;/vendor&gt;&#13;
+&lt;reset board="None" core="Real" sys="Real"/&gt;&#13;
+&lt;clock changeable="TRUE" freq="12MHz" is_accurate="TRUE"/&gt;&#13;
+&lt;memory can_program="true" id="Flash" is_ro="true" type="Flash"/&gt;&#13;
+&lt;memory id="RAM" type="RAM"/&gt;&#13;
+&lt;memory id="Periph" is_volatile="true" type="Peripheral"/&gt;&#13;
+&lt;memoryInstance derived_from="Flash" id="MFlash128" location="0x0" size="0x20000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="RamLoc8" location="0x10000000" size="0x2000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="RamUsb2" location="0x20004000" size="0x800"/&gt;&#13;
+&lt;peripheralInstance derived_from="V6M_NVIC" determined="infoFile" id="NVIC" location="0xe000e000"/&gt;&#13;
+&lt;peripheralInstance derived_from="V6M_DCR" determined="infoFile" id="DCR" location="0xe000edf0"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2C" determined="infoFile" id="I2C" location="0x40000000"/&gt;&#13;
+&lt;peripheralInstance derived_from="WWDT" determined="infoFile" id="WWDT" location="0x40004000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USART" determined="infoFile" id="USART" location="0x40008000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CT16B0" determined="infoFile" id="CT16B0" location="0x4000c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CT16B1" determined="infoFile" id="CT16B1" location="0x40010000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CT32B0" determined="infoFile" id="CT32B0" location="0x40014000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CT32B1" determined="infoFile" id="CT32B1" location="0x40018000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ADC" determined="infoFile" id="ADC" location="0x4001c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PMU" determined="infoFile" id="PMU" location="0x40038000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FLASHCTRL" determined="infoFile" id="FLASHCTRL" location="0x4003c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SSP0" determined="infoFile" id="SSP0" location="0x40040000"/&gt;&#13;
+&lt;peripheralInstance derived_from="IOCON" determined="infoFile" id="IOCON" location="0x40044000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SYSCON" determined="infoFile" id="SYSCON" location="0x40048000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIO-PIN-INT" determined="infoFile" id="GPIO-PIN-INT" location="0x4004c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SSP1" determined="infoFile" id="SSP1" location="0x40058000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIO-GROUP-INT0" determined="infoFile" id="GPIO-GROUP-INT0" location="0x4005c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIO-GROUP-INT1" determined="infoFile" id="GPIO-GROUP-INT1" location="0x40060000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USB" determined="infoFile" id="USB" location="0x40080000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIO-PORT" determined="infoFile" id="GPIO-PORT" location="0x50000000"/&gt;&#13;
+&lt;/chip&gt;&#13;
+&lt;processor&gt;&lt;name gcc_name="cortex-m0"&gt;Cortex-M0&lt;/name&gt;&#13;
+&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
+&lt;/processor&gt;&#13;
+&lt;link href="LPC11Uxx_peripheral.xme" show="embed" type="simple"/&gt;&#13;
+&lt;/info&gt;&#13;
+&lt;/infoList&gt;&#13;
+&lt;/TargetConfig&gt;</projectStorage>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.939816859;com.crt.advproject.config.exe.debug.340099881.939816859.;com.crt.advproject.cpp.exe.debug.891537529;com.crt.advproject.compiler.cpp.input.416120025">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.1413555093;com.crt.advproject.config.exe.debug.340099881.1413555093.;com.crt.advproject.gcc.exe.debug.1591871669;com.crt.advproject.compiler.input.1962831220">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.1413555093;com.crt.advproject.config.exe.debug.340099881.1413555093.;com.crt.advproject.cpp.exe.debug.660972625;com.crt.advproject.compiler.cpp.input.1787906414">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881;com.crt.advproject.config.exe.debug.340099881.;com.crt.advproject.cpp.exe.debug.1169418679;com.crt.advproject.compiler.cpp.input.932967858">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881;com.crt.advproject.config.exe.debug.340099881.;com.crt.advproject.gas.exe.debug.293060604;com.crt.advproject.assembler.input.812876733">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.890387959;com.crt.advproject.config.exe.release.890387959.;com.crt.advproject.gcc.exe.release.1273463462;com.crt.advproject.compiler.input.659625369">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.939816859;com.crt.advproject.config.exe.debug.340099881.939816859.;com.crt.advproject.gas.exe.debug.1017873730;com.crt.advproject.assembler.input.1115822788">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.939816859;com.crt.advproject.config.exe.debug.340099881.939816859.;com.crt.advproject.gcc.exe.debug.1243408955;com.crt.advproject.compiler.input.479058684">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881;com.crt.advproject.config.exe.debug.340099881.;com.crt.advproject.gcc.exe.debug.555986276;com.crt.advproject.compiler.input.2017505512">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.340099881.1413555093;com.crt.advproject.config.exe.debug.340099881.1413555093.;com.crt.advproject.gas.exe.debug.1523936864;com.crt.advproject.assembler.input.2073229279">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.890387959;com.crt.advproject.config.exe.release.890387959.;com.crt.advproject.cpp.exe.release.1764502459;com.crt.advproject.compiler.cpp.input.629351728">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.890387959;com.crt.advproject.config.exe.release.890387959.;com.crt.advproject.gas.exe.release.239830727;com.crt.advproject.assembler.input.861928044">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
