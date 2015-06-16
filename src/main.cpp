@@ -49,7 +49,7 @@
 //Declare ble device as globale
 bleDevice ble;	// use internal 32.768KHz for SoftDevice
 float connection_interval_min = 10;
-float connection_interval_max = 50;
+float connection_interval_max = 100;
 float rssiOutput;
 bool  isRunning=false, isTesting=false;
 int   runDelay=500;
@@ -188,7 +188,7 @@ int main(void) {
 	//
 	// Add BLE UART Service
 	//
-	bleServiceUART nus(ble);			// declare a BLE "Nordic UART Service" (NUS) object
+	bleServiceUART nus(ble,true);			// declare a BLE "Nordic UART Service" (NUS) object, enable WriteNoResponse
 
 	//
 	// Add "connection parameters update" negotiation. (optional)
